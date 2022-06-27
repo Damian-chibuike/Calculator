@@ -1,0 +1,92 @@
+body {
+  max-width: 300px;
+  display: inline-block;
+  display: grid;
+  padding: 0;
+  margin: 0;
+  background: rgb(107, 165, 175)
+}
+
+.calculator-mainframe {
+  width: 300px;
+  height: 440px;
+  background-color: rgb(29, 27, 27);
+  border-radius: 10px;
+  margin-left: 20px;
+ 
+}
+
+#display {
+  font-weight: normal;
+  font-style: normal;
+  font-size: 45px;
+  text-align: right;
+  padding-top: 20px;
+  max-width: 270px;
+  height: 90px;
+  box-shadow: inset 2px 2px 5px rgb(186, 190, 204),
+    inset -5px -5px 10px rgba(240, 233, 233, 0.251);
+  border-radius: 10px;
+  border-style: none;
+  margin: 15px 15px 15px 15px;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 5px;
+  word-wrap: break-word;
+  word-break: break-all;
+
+  
+}
+#display.previous-operand{
+  color: rgba(255, 255, 255, .75);
+  font-size: 28px;
+}
+
+#display.present-operand{
+  color: white;
+  font-size: normal;
+}
+.button,
+.operator,
+#equals-to{
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 500;
+  font-style: oblique;
+  font-size: large;
+  width: 55px;
+  height: 40px;
+  border-radius: 5px;
+  border-bottom: 15px;
+  border-left: 15px;
+  margin: 10px 10px 10px 10px;
+  border-style: none;
+  background-color: rgb(207, 206, 206);
+  cursor: pointer;
+}
+.buttons{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  
+
+}
+#equals-to {
+  background-color: rgb(248, 144, 7);
+  cursor: pointer;
+}
+
+.button:hover,
+.operator:hover,
+.Memory-plus:hover,
+.clear-every:hover,
+.OFF:hover {
+  background-color: rgb(255, 255, 255);
+  transition: 0.5s;
+  opacity: 1;
+}
+#equals-to:hover,
+.ON:hover{
+  background-color: orange;
+}
